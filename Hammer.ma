@@ -1,6 +1,6 @@
 //Maya ASCII 2024 scene
 //Name: Hammer.ma
-//Last modified: Thu, May 18, 2023 09:16:19 PM
+//Last modified: Thu, May 18, 2023 09:23:05 PM
 //Codeset: 1252
 requires maya "2024";
 requires -nodeType "aiOptions" -nodeType "aiAOVDriver" -nodeType "aiAOVFilter" "mtoa" "5.3.1";
@@ -10,12 +10,12 @@ fileInfo "product" "Maya 2024";
 fileInfo "version" "2024";
 fileInfo "cutIdentifier" "202303310755-f9d705a5fd";
 fileInfo "osv" "Windows 11 Home v2009 (Build: 22621)";
-fileInfo "UUID" "A7046DF9-4BEC-C17E-BA16-BF9F8292BB2D";
+fileInfo "UUID" "19D90EE4-4D89-1AD4-C001-B3AB8C2690E4";
 createNode transform -s -n "persp";
 	rename -uid "3DF26583-4713-7004-FE5C-31AE8FDEA5E6";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" -19.439266620884204 14.990126185903163 37.502147007512185 ;
-	setAttr ".r" -type "double3" -19.538352729594781 -27.400000000000901 -8.956126281183142e-16 ;
+	setAttr ".t" -type "double3" -18.583135745002917 25.685445673719936 31.759456181951759 ;
+	setAttr ".r" -type "double3" -32.138352729598658 -30.199999999997715 -1.8400135433046044e-15 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "609C1889-409F-3DEE-08A5-198FC47CB804";
 	setAttr -k off ".v" no;
@@ -80,6 +80,10 @@ createNode transform -n "pSphere1";
 	setAttr ".t" -type "double3" -2.3545737396513191 8.5315166728979257 0 ;
 	setAttr ".r" -type "double3" 0 0 88.209662125269503 ;
 	setAttr ".s" -type "double3" 0.61961041440671116 0.65474844132864773 0.74746568833181548 ;
+	setAttr ".rp" -type "double3" -4.2713561581891319 -2.6298260000226632 0 ;
+	setAttr ".rpt" -type "double3" 6.7664518018372402 -1.7216066318290262 0 ;
+	setAttr ".sp" -type "double3" -6.8936158251617456 -4.0165441168307208 0 ;
+	setAttr ".spt" -type "double3" 2.622259666972619 1.3867181168080667 0 ;
 createNode mesh -n "pSphereShape1" -p "pSphere1";
 	rename -uid "5C93E8D3-47B2-B52D-683F-D2AA96D6D4B2";
 	setAttr -k off ".v";
